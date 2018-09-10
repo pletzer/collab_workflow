@@ -49,4 +49,7 @@ git checkout master
 ```
 git checkout 34c8e11842
 ```
-where the long hex number can be inferred from `git status <file>`.  Yoy 
+where the hex number can be inferred from `git status <file>` (can be abbreviated).  You can come back to the latest version by typing
+```
+git checkout master
+```
