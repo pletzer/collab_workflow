@@ -13,7 +13,7 @@ Every project attempts to achieve two simulatenous goals:
 
 ## Basic steps
 
- 1. Each developer forks from `https://githulb.com/pletzer/collab_workflow`. Click on the fork button [DESCRIBE]. 
+ 1. Each developer forks from `https://github.com/pletzer/collab_workflow`. Click on the fork button [DESCRIBE]. 
  2. Each developer creates a branch within their own repository. A branch represents an idea, concept, bug fix and should be named appropriately. In the following we call our new development branch `new_population_assessment`. The developer
     * `git checkout -b new_population_assessment` (checks out and creates the branch)
     * commits locally to their branch `git commit -a`
