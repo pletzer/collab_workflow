@@ -44,3 +44,9 @@ To go back to master, just type
 git checkout master
 ```
 
+## Checking out a previous version
+
+```
+git checkout 34c8e11842
+```
+where the long hex number can be inferred from `git status <file>`.  Yoy 
