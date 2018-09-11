@@ -22,7 +22,7 @@ Every project attempts to achieve two simulatenous goals:
     * first merges the master branch to the current branch (to pick up any changes since the branch split from master)
       * `git merge https://https://githulb.com/pletzer/collab_workflow`
     * commits and pushes to their own remote repository
-      * `git push origin new_population_assessment`
+      * `git push origin new_population_assessment`(this is a random string)
     * creates a pull-request on the web site, justifying in the text box why the change is important what has been done/achieved. The gate-keepers will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. Finally the gate-keeper agrees with the change and the `new_population_assessment` code is merged to the master branch. At that point the `new_population_assessment` branch can be deleted.
 
 ## Five basic git commands
