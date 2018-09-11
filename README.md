@@ -25,6 +25,14 @@ Every project attempts to achieve two simulatenous goals:
       * `git push origin new_population_assessment`
     * creates a pull-request on the web site, justifying in the text box why the change is important what has been done/achieved. The gate-keepers will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. Finally the gate-keeper agrees with the change and the `new_population_assessment` code is merged to the master branch. At that point the `new_population_assessment` branch can be deleted.
 
+## Five basic git commands
+
+ 1. `git clone <url>` makes a direct copy of repository to you local machine
+ 2. `git add <file>` adds a file for staging
+ 3. `git commit -a` commit all your changes locally (your repo copy on your machine)
+ 4. `git push` push your commits (changes) from your local repo to remote repo
+ 5. `git pull` pull updates from the remote repo to your local copy
+
 ## How to switch between different branches
 
 Developers will typically work with different branches, e.g. `master` and `improve_logging`. First you need to fetch all the remote branches:
