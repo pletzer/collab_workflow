@@ -27,6 +27,8 @@ Every project attempts to achieve two simulatenous goals:
 
 The process is shown below. Contributors fork from the "dev" branch. Each contributor creates a feature branch ("b1", "b2", "b3") which end with a pull-request. It the pull-request is accepted then the changes are incorporated into the "dev" branch. Not shown here are "dangling" branches, for which pull-requests are not made or they have not been accepted.
 
+At specific times, when the code is judged to be stable, the `dev` branch is merged into the `master` branch.
+
 ```sequence
                               v1.0                  v1.1
 master -------------------------o--------------------o---->
