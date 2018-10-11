@@ -25,6 +25,12 @@ Every project attempts to achieve two simulatenous goals:
       * `git push origin new_population_assessment`
     * creates a pull-request on the web site, justifying in the text box why the change is important what has been done/achieved. The gate-keepers will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. Finally the gate-keeper agrees with the change and the `new_population_assessment` code is merged to the master branch. At that point the `new_population_assessment` branch can be deleted.
 
+```sequence
+Alice->Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob-->Alice: I am good thanks!
+```
+
 ## Five basic git commands
 
  1. `git clone <url>` makes a direct copy of repository to you local machine
