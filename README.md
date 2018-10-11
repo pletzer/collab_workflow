@@ -26,10 +26,15 @@ Every project attempts to achieve two simulatenous goals:
     * creates a pull-request on the web site, justifying in the text box why the change is important what has been done/achieved. The gate-keepers will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. Finally the gate-keeper agrees with the change and the `new_population_assessment` code is merged to the master branch. At that point the `new_population_assessment` branch can be deleted.
 
 ```sequence
-Alice->Bob: Hello Bob, how are you?
-Note right of Bob: Bob thinks
-Bob-->Alice: I am good thanks!
+                              v1.0                  v1.1
+master -------------------------o--------------------o--------------->
+                                ^                    ^
+                                |                    |
+   dev ----o----o----o-----o----.---o--------o-------.-----o--o------>
+
+   
 ```
+
 
 ## Five basic git commands
 
