@@ -31,17 +31,17 @@ There are two main roles to be assigned in the project:
     * modify and `git commit -a` your changes
     * push your changes to your remote personal branch, `git push origin new_population_assessment`. 
 
- 4. When the changes are ready to be merged to the project master branch:
-    1. merge the master branch to the current branch (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
-    2. commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
-    3. create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`.
-
 ## Working in TortoiseGit
 
 The right-click menu is used. See links below for:
  * [starting a new branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png),
  * [committing your local changes to a branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit1.png) and [documenting what you're committing](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit2.png), and
  * [pushing to the remote branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push1.png) and [confirming the push](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push2.png).
+
+ 4. When the changes are ready to be merged to the project master branch:
+    1. merge the master branch to the current branch (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
+    2. commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
+    3. create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`.
 
 
 ## Synoptic representation of the workflow
