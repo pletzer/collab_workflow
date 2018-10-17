@@ -1,6 +1,6 @@
 # COLLAB_WORKFLOW
 
-How to collaborate on a project
+How to collaborate on a project together.
 
 ## Overview
 
