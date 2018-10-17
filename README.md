@@ -16,13 +16,22 @@ Every project attempts to achieve two simulatenous goals:
  1. Each developer forks from `https://github.com/pletzer/collab_workflow`. Click on the fork button [DESCRIBE].
  
  ![Image of "Fork" button](fork.png)
+ 
  2. "Clone" the forked branch to your computer (i.e. download it). Click the "Clone or download" button, and copy the URL. Then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. The fork will download to your computer.
  
  ![Image of "Clone" button](clone.png)
+ 
  3. Each developer creates a branch within their own repository. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. The developer
+
     * `git checkout -b new_population_assessment` (checks out and creates the branch)
     * commits locally to their branch `git commit -a`
-    * then pushes to the remote branch, `git push origin new_population_assessment`. 
+    * then pushes to the remote branch, `git push origin new_population_assessment`.
+
+For working in Tortoisegit, the right-click menu is used. See links below for:
+ * [starting a new branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png),
+ * [committing your local changes to a branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit1.png) and [documenting what you're committing](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit2.png), and
+ * [pushing to the remote branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push1.png) and [confirming the push](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push2.png).
+
  4. When the new code is ready to be merged to the master branch, the developer:
     * first merges the master branch to the current branch (to pick up any changes since the branch split from master)
       * `git merge https://github.com/pletzer/collab_workflow`
