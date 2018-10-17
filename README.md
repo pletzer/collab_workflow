@@ -31,7 +31,7 @@ There are two main roles to be assigned in the project:
     * modify and `git commit -a` your changes
     * push your changes to your remote personal branch, `git push origin new_population_assessment`. 
 
-# Working in TortoiseGit
+### Working in TortoiseGit
 
 The right-click menu is used. See links below for:
  * [creating a new branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png),
