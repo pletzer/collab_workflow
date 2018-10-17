@@ -23,7 +23,27 @@ Every project attempts to achieve two simulatenous goals:
       * `git merge https://github.com/pletzer/collab_workflow`
     * commits and pushes to their own remote repository
       * `git push origin new_population_assessment`
-    * creates a pull-request on the web site, justifying in the text box why the change is important what has been done/achieved. The gate-keepers will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. Finally the gate-keeper agrees with the change and the `new_population_assessment` code is merged to the master branch. At that point the `new_population_assessment` branch can be deleted.
+    * creates a pull-request on the web site against the `dev` branch, justifying in the text box why the change is important what has been done/achieved. The gate-keepers will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. Finally the gate-keeper agrees with the change and the `new_population_assessment` code is merged to the master branch. At that point the `new_population_assessment` branch can be deleted.
+
+The process is shown below. Contributors fork from the "dev" branch. Each contributor creates a feature branch ("b1", "b2", "b3") which end with a pull-request. It the pull-request is accepted then the changes are incorporated into the "dev" branch. Not shown here are "dangling" branches, for which pull-requests are not made or they have not been accepted.
+
+At specific times, when the code is judged to be stable, the `dev` branch is merged into the `master` branch.
+
+```sequence
+                              v1.0                  v1.1
+master -------------------------o--------------------o---->
+                                ^                    ^
+                                |                    |
+   dev ----.----.----o-----o--o-.-----------o--------.---->
+           |    |    ^     ^  |             ^
+           |    |    |     |  |             |
+    b1     .---------.     |  |             |     
+                |          |  |             |
+    b2          .----------.  |             |
+                              |             |
+    b3                        .-------------.
+```
+
 
 ## Five basic git commands
 
