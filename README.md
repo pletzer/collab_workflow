@@ -21,9 +21,12 @@ Every project attempts to achieve two simulatenous goals:
  ![Image of "Clone" button](clone.png)
  3. Each developer creates a branch within their own repository. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. The developer
 
-    * `git checkout -b new_population_assessment` (checks out and creates the branch) [Tortoisegit](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png)
+    * `git checkout -b new_population_assessment` (checks out and creates the branch)
     * commits locally to their branch `git commit -a`
-    * then pushes to the remote branch, `git push origin new_population_assessment`. 
+    * then pushes to the remote branch, `git push origin new_population_assessment`.
+
+ For working in Tortoisegit, the right-click menu is used (see [starting a new branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png)).
+
  4. When the new code is ready to be merged to the master branch, the developer:
     * first merges the master branch to the current branch (to pick up any changes since the branch split from master)
       * `git merge https://github.com/pletzer/collab_workflow`
