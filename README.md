@@ -4,7 +4,7 @@ How to collaborate effectively on a project
 
 ## Overview
 
-Every project attempts to achieve two simulatenous goals:
+Every project attempts to achieve two simulatenous and opposing goals:
 
  1. Allow and receive contributions from many
  2. Make sure the project's integrity is preserved
@@ -13,9 +13,9 @@ The following describes a process for working with code or ASCII documents using
 
 ## Collaborators and contributors
 
-There are two main roles in the project:
+There are two main roles to be assigned in the project:
 
- * *Contributors* - Anyone who contributes to the project. 
+ * *Contributors* - Anyone who contributes to the project (no permission required). 
  * *Collaborators* - People who have the permission to accept changes submitted by contributors. A collaborator can also be contributor. The same person cannot submit and review a submission for changes (pull-request).
 
 ## Basic steps
@@ -36,7 +36,17 @@ There are two main roles in the project:
     2. commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
     3. create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`.
 
-The process is shown below with the time going from left to right. Changes/commits/merges are shown as "O". The vertical dotted line shows where a pull-request was initiated.
+## Working in TortoiseGit
+
+The right-click menu is used. See links below for:
+ * [starting a new branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png),
+ * [committing your local changes to a branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit1.png) and [documenting what you're committing](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit2.png), and
+ * [pushing to the remote branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push1.png) and [confirming the push](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push2.png).
+
+
+## Synoptic representation of the workflow
+
+The process is shown below with time advancing from left to right. A branch is shown as a horizontal line. Branches are stacked vertically. Changes/commits/merges are shown as "O". The vertical dotted line shows where a pull-request was initiated. Special actions are denoted by A, B, C, D and E:
  * A: project master repo is forked
  * B: changes from project master are "pulled" to personal master and feature branch "new_population_assessment" is created
  * C: changes from the project master are "pulled" into the "new_population_assessment" branch. If any, resolve conflicts arising from the "pull". 
@@ -55,7 +65,6 @@ new_population_assessment   .-O--O---O-O-O-O-O-+
                              
                             B            C  D  E         
 ```
-
 
 ## Five basic git commands
 
