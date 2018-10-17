@@ -82,3 +82,14 @@ where the hex number can be inferred from `git status <file>` (can be abbreviate
 ```
 git checkout master
 ```
+
+## Terminology
+
+ * *project repo* - the original remote repository, expected to be stable and bug free
+ * *personal repo* - repo forked from the project repo
+ * *master branch* - the branch that is created by default when creating the project repo or forking from the project repo
+ * *feature branch* - a short lived branch that is created for the purpose of implementing a new feature
+ * *local repo* - obtained when cloning a personal or project repo
+ * *local changes* - changes that have not yet been committed to the local repo
+ * *pushing changes* - updating the remote personal repo with the changes committed locally
+ * *pulling changes* - updating the local repo with changes from the remote repo
