@@ -13,8 +13,11 @@ Every project attempts to achieve two simulatenous goals:
 
 ## Basic steps
 
- 1. Each developer forks from `https://github.com/pletzer/collab_workflow`. Click on the fork button [DESCRIBE]. 
+ 1. Each developer forks from `https://github.com/pletzer/collab_workflow`. Click on the fork button [DESCRIBE].
+ 
+ ![Image of "Fork" button](fork.png)
  2. "Clone" the forked branch to your computer (i.e. download it). Click the "Clone or download" button, and copy the URL. Then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. The fork will download to your computer.
+ 
  ![Image of "Clone" button](clone.png)
  3. Each developer creates a branch within their own repository. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. The developer
     * `git checkout -b new_population_assessment` (checks out and creates the branch)
