@@ -44,7 +44,7 @@ The right-click menu is used. See links below for:
  * [pushing to the remote branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push1.png) and [confirming the push](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push2.png).
 
 
-## Synoptic representation of the workflow
+## Synoptics of the workflow
 
 The process is shown below with time advancing from left to right. A branch is shown as a horizontal line. Branches are stacked vertically. Changes/commits/merges are shown as "O". The vertical dotted line shows where a pull-request was initiated. Special actions are denoted by A, B, C, D and E:
  * A: project master repo is forked
@@ -54,6 +54,7 @@ The process is shown below with time advancing from left to right. A branch is s
  * E: pull-request is accepted by collaborator, changes from branch "new_population_assessment" are merged into the project master. 
 
 ```sequence
+                       v       v      v
 project master   -+----O---+---O------O--+--:--O--...
                   |        |             |  :  ^
                   |        v             |  :  |
@@ -110,6 +111,14 @@ where the hex number can be inferred from `git status <file>` (can be abbreviate
 ```
 git checkout master
 ```
+
+## Frequently asked questions 
+
+ * Q: Why should I should create a branch in order to publish (pull-request) changes? 
+   * A: This allows you to work on different features at the same time, create different pull-requests, each may be accepted or rejected. Each pull request contains only the differences for the given feature, making it easier for the collaborator to review your changes. We recomend that you do not make any changes to your "master" branch except by pulling from the project "master". 
+
+ * Q: What if I need changes not yet accepted by a pull-request in order to work on a new feature? 
+  * A: Branch off from the previous pull-request branch and make your changes theres. In the pull-request message, indicate that the current pull-request supercedes the previous pull-request. The collaborator then has the choice between aceepting the last pull-request and rejecting the previous one or accepting the previous one, or rejecting both.
 
 ## Terminology
 
