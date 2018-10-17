@@ -20,7 +20,8 @@ Every project attempts to achieve two simulatenous goals:
  
  ![Image of "Clone" button](clone.png)
  3. Each developer creates a branch within their own repository. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. The developer
-    * `git checkout -b new_population_assessment` (checks out and creates the branch)
+
+		* `git checkout -b new_population_assessment` (checks out and creates the branch)
     * commits locally to their branch `git commit -a`
     * then pushes to the remote branch, `git push origin new_population_assessment`. 
  4. When the new code is ready to be merged to the master branch, the developer:
