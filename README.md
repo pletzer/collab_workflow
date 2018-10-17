@@ -83,7 +83,7 @@ where the hex number can be inferred from `git status <file>` (can be abbreviate
 git checkout master
 ```
 
-## Nomenclature
+## Terminology
 
  * *project repo* - the original remote repository, expected to be stable and bug free
  * *personal repo* - repo forked from the project repo
