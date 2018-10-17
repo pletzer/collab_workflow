@@ -26,7 +26,7 @@ There are two main roles in the project:
  2. Clone your personal repo (i.e. download it) `git clone https://github.com/$USER/collab_workflow`. Click the "Clone or download" button and copy the URL. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer.
  ![Image of "Clone" button](clone.png)
 
- 3. Create a feature branch in your cloned repo. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
+ 3. Create a feature branch in your personal master branch. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
     * `git checkout -b new_population_assessment` (checks out and creates the branch)
     * modify and `git commit -a` your changes
     * push your changes to your remote personal branch, `git push origin new_population_assessment`. 
