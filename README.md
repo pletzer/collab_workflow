@@ -47,9 +47,10 @@ There are two main roles to be assigned in the project:
     ![Merge 4](merge4.png)
     ![Merge 5](merge5.png)
     
-    And now, to do the equivalent of step (a) above:
+    And now, to do the equivalent of step (a) above, we need to pull from the remote branch to our local branch:
     
     ![Merge 6](merge6.png)
+    ![Merge 7](merge7.png)
 				
     (b) commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
     
