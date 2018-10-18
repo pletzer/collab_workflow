@@ -37,15 +37,28 @@ There are two main roles to be assigned in the project:
   * [pushing to the remote branch](./push1.png) and [confirming the push](./push2.png).
 
  4. When the changes are ready to be merged to the project master branch:
-    1. merge the master branch to the current branch (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
+ 
+ 	(a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
+	
+	**Tortoisegit:** To merge from the master repo, there are several options. What we show here is basic, but it works. There are cleverer ways using the right-click menu in Tortoisegit, but these are more work.
+	
+	![Merge 1](merge1.png)
+    	![Merge 2](merge2.png)
+    	![Merge 3](merge3.png)
+    	![Merge 4](merge4.png)
+    	![Merge 5](merge5.png)
+	
+	And now, to do the equivalent of step (a) above, we need to pull from the remote branch to our local branch:
+    
+	![Merge 6](merge6.png)
+    	![Merge 7](merge7.png)
 				
-    ![Merge 1](merge1.png)
-				
-    2. commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
-    3. create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`.
+	(b) commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
+    
+	(c) create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`.
 
-    ![Pull request 1](pullrequest1.png)
-    ![Pull request 2](pullrequest2.png)
+	![Pull request 1](pullrequest1.png)
+	![Pull request 2](pullrequest2.png)
 
 ## Synoptics of the workflow
 
