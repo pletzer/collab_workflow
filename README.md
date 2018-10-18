@@ -34,7 +34,7 @@ There are two main roles to be assigned in the project:
  **Working with TortoiseGit:** for the equivalent of the above commands, the right-click menu is used. See links below for:
   * [creating a new branch](./new_branch.png),
   * [committing your local changes to a branch](./commit1.png) and [documenting what you're committing](./commit2.png), and
-  * [pushing to the remote branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push1.png) and [confirming the push](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push2.png).
+  * [pushing to the remote branch](./push1.png) and [confirming the push](./push2.png).
 
  4. When the changes are ready to be merged to the project master branch:
     1. merge the master branch to the current branch (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
