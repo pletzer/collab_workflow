@@ -1,10 +1,10 @@
 # COLLAB_WORKFLOW
 
-How to collaborate effectively on a project
+How to collaborate effectively on a project.
 
 ## Overview
 
-Every project attempts to achieve two simulatenous and opposing goals:
+Every project attempts to achieve two simultaneous and opposing goals:
 
  1. Allow and receive contributions from many
  2. Make sure the project's integrity is preserved
