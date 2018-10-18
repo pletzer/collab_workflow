@@ -2,6 +2,11 @@
 
 How to collaborate effectively on a project
 
+# Table of Contents
+1. [Overview] (#Overview)
+
+
+
 ## Overview
 
 Every project attempts to achieve two simulatenous and opposing goals:
