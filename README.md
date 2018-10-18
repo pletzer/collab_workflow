@@ -37,7 +37,8 @@ There are two main roles to be assigned in the project:
   * [pushing to the remote branch](./push1.png) and [confirming the push](./push2.png).
 
  4. When the changes are ready to be merged to the project master branch:
-	(a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
+ 
+ 	(a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
 	
 	**Tortoisegit:** To merge from the master repo, there are several options. What we show here is basic, but it works. There are cleverer ways using the right-click menu in Tortoisegit, but these are more work.
 	
