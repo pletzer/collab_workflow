@@ -136,6 +136,9 @@ git checkout master
  * Q: What if I need changes not yet accepted by a pull-request in order to work on a new feature? 
   * A: Branch off from the previous pull-request branch and make your changes theres. In the pull-request message, indicate that the current pull-request supercedes the previous pull-request. The collaborator then has the choice between aceepting the last pull-request and rejecting the previous one or accepting the previous one, or rejecting both.
 
+ * Q: What is your favourite fish?
+  * A: cod.
+
 ## Terminology
 
  * *project repo* - the original remote repository, expected to be stable and clean
