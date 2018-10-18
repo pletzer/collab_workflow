@@ -2,6 +2,19 @@
 
 How to collaborate effectively on a project to take over the world
 
+# Table of Contents
+  * [Overview](#overview)
+  * [Collaborators and contributors](#collaborators-and-contributors)
+  * [Basic steps](#basic-steps)
+  * [Synoptics of the workflow](#synoptics-of-the-workflow)
+  * [Five basic git commands](#five-basic-git-commands)
+  * [How to switch between different branches](#how-to-switch-between-different-branches)
+  * [Checking out a previous version](#checking-out-a-previous-version)
+  * [Frequently asked questions](#frequently-asked-questions)
+  * [Terminology](#terminology)
+
+
+
 ## Overview
 
 Every project attempts to achieve two simulatenous and opposing goals:
