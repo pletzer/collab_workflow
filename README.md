@@ -39,7 +39,7 @@ There are two main roles to be assigned in the project:
  4. When the changes are ready to be merged to the project master branch:
     (a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
 				
-    **Tortoisegit:** This needs to be done the first time. We need tp set up merging from the master branch with the following steps:
+    **Tortoisegit:** To merge from the master repo, some initial extra steps need to be done initially (after which it's there forever). We need to set up merging from the master branch with the following steps:
     
     ![Merge 1](merge1.png)
     ![Merge 2](merge2.png)
