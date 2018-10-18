@@ -1,6 +1,6 @@
 # COLLAB_WORKFLOW
 
-How to collaborate effectively on a project
+How to collaborate effectively on a project to take over the world
 
 ## Overview
 
