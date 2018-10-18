@@ -9,7 +9,7 @@ Every project attempts to achieve two simulatenous and opposing goals:
  1. Allow and receive contributions from many
  2. Make sure the project's integrity is preserved
 
-The following describes a process for working with code or ASCII documents using github as a repository. It assumes that you have registered on github and have user name `$USER`.
+The following describes a process for working with code or ASCII documents using github as a repository. It assumes that you have registered on github and have user name `$GITUSER`.
 
 ## Collaborators and contributors
 
@@ -23,7 +23,7 @@ There are two main roles to be assigned in the project:
  1. Fork the project repo from `https://github.com/pletzer/collab_workflow`. This will create your personal repo.
  ![Image of "Fork" button](fork.png)
 
- 2. Clone your personal repo (i.e. download it) `git clone https://github.com/$USER/collab_workflow`. Click the "Clone or download" button and copy the URL. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer.
+ 2. Clone your personal repo (i.e. download it) `git clone https://github.com/$GITUSER/collab_workflow`. Click the "Clone or download" button and copy the URL. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer.
  ![Image of "Clone" button](clone.png)
 
  3. Create a feature branch in your personal master branch. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
@@ -32,9 +32,9 @@ There are two main roles to be assigned in the project:
     * push your changes to your remote personal branch, `git push origin new_population_assessment`. 
 
  **Working with TortoiseGit:** for the equivalent of the above commands, the right-click menu is used. See links below for:
-  * [creating a new branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/new_branch.png),
-  * [committing your local changes to a branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit1.png) and [documenting what you're committing](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/commit2.png), and
-  * [pushing to the remote branch](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push1.png) and [confirming the push](https://github.com/SamikDatta/collab_workflow/blob/tortoisegit_images/push2.png).
+  * [creating a new branch](./new_branch.png),
+  * [committing your local changes to a branch](./commit1.png) and [documenting what you're committing](./commit2.png), and
+  * [pushing to the remote branch](./push1.png) and [confirming the push](./push2.png).
 
  4. When the changes are ready to be merged to the project master branch:
     (a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
@@ -58,7 +58,7 @@ There are two main roles to be assigned in the project:
     ![Pull request 1](pullrequest1.png)
     ![Pull request 2](pullrequest2.png)
 
-## Synoptic representation of the workflow
+## Synoptics of the workflow
 
 The process is shown below with time advancing from left to right. A branch is shown as a horizontal line. Branches are stacked vertically. Changes/commits/merges are shown as "O". The vertical dotted line shows where a pull-request was initiated. Special actions are denoted by A, B, C, D and E:
  * A: project master repo is forked
@@ -68,6 +68,7 @@ The process is shown below with time advancing from left to right. A branch is s
  * E: pull-request is accepted by collaborator, changes from branch "new_population_assessment" are merged into the project master. 
 
 ```sequence
+                       v       v      v
 project master   -+----O---+---O------O--+--:--O--...
                   |        |             |  :  ^
                   |        v             |  :  |
@@ -124,6 +125,14 @@ where the hex number can be inferred from `git status <file>` (can be abbreviate
 ```
 git checkout master
 ```
+
+## Frequently asked questions 
+
+ * Q: Why should I should create a branch in order to publish (pull-request) changes? 
+   * A: This allows you to work on different features at the same time, create different pull-requests, each may be accepted or rejected. Each pull request contains only the differences for the given feature, making it easier for the collaborator to review your changes. We recomend that you do not make any changes to your "master" branch except by pulling from the project "master". 
+
+ * Q: What if I need changes not yet accepted by a pull-request in order to work on a new feature? 
+  * A: Branch off from the previous pull-request branch and make your changes theres. In the pull-request message, indicate that the current pull-request supercedes the previous pull-request. The collaborator then has the choice between aceepting the last pull-request and rejecting the previous one or accepting the previous one, or rejecting both.
 
 ## Terminology
 
