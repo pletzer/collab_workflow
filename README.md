@@ -33,45 +33,31 @@ There are two main roles to be assigned in the project:
 
 ## Basic steps
 
- 1. Fork the project repo from `https://github.com/pletzer/collab_workflow`. This will create your personal repo.
- ![Image of "Fork" button](fork.png)
+ 1. Fork the project repo from `https://github.com/pletzer/collab_workflow`. This will create your personal repo. <a href="https://github.com/pletzer/collab_workflow/blob/master/fork.png">Click here to see how to fork</a>.
 
- 2. Clone your personal repo (i.e. download it) `git clone https://github.com/$GITUSER/collab_workflow`. Click the "Clone or download" button and copy the URL. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer.
- ![Image of "Clone" button](clone.png)
+ 2. Clone your personal repo (i.e. download it) `git clone https://github.com/$GITUSER/collab_workflow`. <a href="https://github.com/pletzer/collab_workflow/blob/master/clone.png">Click here to see how to clone</a>. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created
+   1. right-click
+   2. click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer 
 
- 3. Create a feature branch in your personal master branch. A branch represents a topic (an idea, a concept, a bug fix, etc...) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
-    * `git checkout -b new_population_assessment` (checks out and creates the branch)
-    * modify and `git commit -a` your changes
-    * push your changes to your remote personal branch, `git push origin new_population_assessment`. 
+ 3. Create a feature branch in your personal master branch. A branch represents a topic (an idea, a concept, a bug fix, etc.) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
+    1. `git checkout -b new_population_assessment` (checks out and creates the branch). <a href="https://github.com/pletzer/collab_workflow/blob/master/new_branch.png">How to create a new branch with TortoiseGit.</a>
+    2. modify and `git commit -a` your changes. <a href="https://github.com/pletzer/collab_workflow/blob/master/commit1.png">See here how to commit changes with TortoiseGit.</a>
+    3. push your changes to your remote personal branch, `git push origin new_population_assessment`. <a href="https://github.com/pletzer/collab_workflow/blob/master/push1.png">See here how to push changes with TortoiseGit</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/push2.png">and confirm the changes.</a>
 
- **Working with TortoiseGit:** for the equivalent of the above commands, the right-click menu is used. See links below for:
-  * [creating a new branch](./new_branch.png),
-  * [committing your local changes to a branch](./commit1.png) and [documenting what you're committing](./commit2.png), and
-  * [pushing to the remote branch](./push1.png) and [confirming the push](./push2.png).
+ **Working with TortoiseGit:** for the equivalent of the above commands, the right-click menu is used
 
  4. When the changes are ready to be merged to the project master branch:
  
  	(a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
 	
-	**Tortoisegit:** To merge from the master repo, there are several options. What we show here is basic, but it works. There are cleverer ways using the right-click menu in Tortoisegit, but these are more work.
-	
-	![Merge 1](merge1.png)
-    	![Merge 2](merge2.png)
-    	![Merge 3](merge3.png)
-    	![Merge 4](merge4.png)
-    	![Merge 5](merge5.png)
-	
-	And now, to do the equivalent of step (a) above, we need to pull from the remote branch to our local branch:
-    
-	![Merge 6](merge6.png)
-    	![Merge 7](merge7.png)
-				
+	**Tortoisegit:** To merge from the master repo, there are several options. We show here the basic one: <a href="https://github.com/pletzer/collab_workflow/blob/master/merge1.png">merge step 1,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge2.png">step 2,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge3.png">step 3</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge4.png">step 4</a> and <a href="https://github.com/pletzer/collab_workflow/blob/master/merge5.png">step 5</a>. 
+		
+	And now, to do the equivalent of step (a) above, we need to pull from the remote branch to our local branch (<a href="https://github.com/pletzer/collab_workflow/blob/master/merge6.png">pull step 1</a> and <a href="https://github.com/pletzer/collab_workflow/blob/master/merge7.png">pull step 2</a>)
+    				
 	(b) commit your changes to the local branch, `git commit -a`, and push the local branch to your remote personal repository `git push origin new_population_assessment`
     
-	(c) create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`.
+	(c) create a pull-request on the web site against the project master branch, justifying in the text box why the change is important what has been done/achieved. One of the collaborators will assess the change to the repository. There can be back and forth discussion, all captured in the text boxes. At some point the collaborator might agree with the change and the `new_population_assessment` code then gets merged to the master branch. Delete the `new_population_assessment` branch: `git branch -D new_population_assessment`. This is shown <a href="https://github.com/pletzer/collab_workflow/blob/master/pullrequest1.png">here</a> and  <a href="https://github.com/pletzer/collab_workflow/blob/master/pullrequest2.png">here</a>.
 
-	![Pull request 1](pullrequest1.png)
-	![Pull request 2](pullrequest2.png)
 
 ## Synoptics of the workflow
 
@@ -84,14 +70,14 @@ The process is shown below with time advancing from left to right. A branch is s
 
 ```sequence
                        v       v      v
-project master   -+----O---+---O------O--+--:--O-->...
-                  |        |             |  :  ^
-                  |        v             |  :  |
-personal master   .---------+--...       |  :  |
-                            |            |  :  |
-                  A         |            |  :  |
-                            |            v  :  |
-new_population_assessment  .-O--O---O-O-O-O-O-+
+project master   -+----O----+---O------O--+--:--O-->...
+                  |         |             |  :  ^
+                  |         v             |  :  |
+personal master   .---------+--...        |  :  |
+                            |             |  :  |
+                  A         |             |  :  |
+                            |             v  :  |
+new_population_assessment   .-O--O---O-O-OO--O--+
 (feature master)
                             B            C  D  E         
 ```
@@ -149,9 +135,7 @@ git checkout master
  * Q: What if I need changes not yet accepted by a pull-request in order to work on a new feature? 
   * A: Branch off from the previous pull-request branch and make your changes theres. In the pull-request message, indicate that the current pull-request supercedes the previous pull-request. The collaborator then has the choice between aceepting the last pull-request and rejecting the previous one or accepting the previous one, or rejecting both.
 
- * Q: What is your favourite fish?
-  * A: massive sharks.
-
+ 
 ## Terminology
 
  * *project repo* - the original remote repository, expected to be stable and clean
