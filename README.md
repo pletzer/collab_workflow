@@ -40,7 +40,7 @@ There are two main roles to be assigned in the project:
    2. click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer 
 
  3. Create a feature branch in your personal master branch. A branch represents a topic (an idea, a concept, a bug fix, etc.) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
-    1. `git checkout -b new_population_assessment` (checks out and creates the branch). <a href="https://github.com/pletzer/collab_workflow/blob/master/new_branch.png">How to create a new branch with TortoiseGit.</a>
+    1. `git checkout -b new_population_assessment` (checks out and creates the branch). <a href="https://github.com/pletzer/collab_workflow/blob/master/new_branch.png">How to create a new branch with TortoiseGit</a> and <a href="https://github.com/pletzer/collab_workflow/blob/master/new_branch_2.png">switching to it</a>.
     2. modify and `git commit -a` your changes. <a href="https://github.com/pletzer/collab_workflow/blob/master/commit1.png">See here how to commit changes with TortoiseGit.</a>
     3. push your changes to your remote personal branch, `git push origin new_population_assessment`. <a href="https://github.com/pletzer/collab_workflow/blob/master/push1.png">See here how to push changes with TortoiseGit</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/push2.png">and confirm the changes.</a>
 
