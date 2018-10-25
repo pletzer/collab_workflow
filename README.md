@@ -33,8 +33,7 @@ There are two main roles to be assigned in the project:
 
 ## Basic steps
 
- 1. Fork the project repo from `https://github.com/pletzer/collab_workflow`. This will create your personal repo.
- ![Image of "Fork" button](fork.png)
+ 1. Fork the project repo from `https://github.com/pletzer/collab_workflow`. This will create your personal repo. <a href="https://github.com/pletzer/collab_workflow/blob/master/fork.png">Click here to see how to fork</a>.
 
  2. Clone your personal repo (i.e. download it) `git clone https://github.com/$GITUSER/collab_workflow`. Click the "Clone or download" button and copy the URL. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer.
  ![Image of "Clone" button](clone.png)
