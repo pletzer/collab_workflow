@@ -35,12 +35,14 @@ There are two main roles to be assigned in the project:
 
  1. Fork the project repo from `https://github.com/pletzer/collab_workflow`. This will create your personal repo. <a href="https://github.com/pletzer/collab_workflow/blob/master/fork.png">Click here to see how to fork</a>.
 
- 2. Clone your personal repo (i.e. download it) `git clone https://github.com/$GITUSER/collab_workflow`. <a href="https://github.com/pletzer/collab_workflow/blob/master/clone.png">Click here to see how to clone</a>. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created, right-click, and click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer. 
+ 2. Clone your personal repo (i.e. download it) `git clone https://github.com/$GITUSER/collab_workflow`. <a href="https://github.com/pletzer/collab_workflow/blob/master/clone.png">Click here to see how to clone</a>. If using TortoiseGit then go to the Windows Explorer window in which you want the folder created
+   1. right-click
+   2. click "Git Clone...". A window will appear, if you're happy with the options, just click OK. Your personal repo will download to your computer 
 
  3. Create a feature branch in your personal master branch. A branch represents a topic (an idea, a concept, a bug fix, etc.) and should be named appropriately. In the following we call our new development branch `new_population_assessment`. Then
-    * `git checkout -b new_population_assessment` (checks out and creates the branch). <a href="https://github.com/pletzer/collab_workflow/blob/master/new_branch.png">How to create a new branch with TortoiseGit.</a>
-    * modify and `git commit -a` your changes. <a href="https://github.com/pletzer/collab_workflow/blob/master/commit1.png">How to commit changes with TortoiseGit.</a>
-    * push your changes to your remote personal branch, `git push origin new_population_assessment`. <a href="https://github.com/pletzer/collab_workflow/blob/master/push1.png">How to push changes with TortoiseGit</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/push2.png">and confirm the changes.</a>
+    1. `git checkout -b new_population_assessment` (checks out and creates the branch). <a href="https://github.com/pletzer/collab_workflow/blob/master/new_branch.png">How to create a new branch with TortoiseGit.</a>
+    2. modify and `git commit -a` your changes. <a href="https://github.com/pletzer/collab_workflow/blob/master/commit1.png">See here how to commit changes with TortoiseGit.</a>
+    3. push your changes to your remote personal branch, `git push origin new_population_assessment`. <a href="https://github.com/pletzer/collab_workflow/blob/master/push1.png">See here how to push changes with TortoiseGit</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/push2.png">and confirm the changes.</a>
 
  **Working with TortoiseGit:** for the equivalent of the above commands, the right-click menu is used
 
@@ -48,7 +50,7 @@ There are two main roles to be assigned in the project:
  
  	(a) merge the master branch of the project repo to the current branch on which you're working (to pick up any changes since the branch split from project master): `git merge https://github.com/pletzer/collab_workflow master`
 	
-	**Tortoisegit:** To merge from the master repo, there are several options. What we show here the basic one. <a href="https://github.com/pletzer/collab_workflow/blob/master/merge1.png">Merge step 1,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge2.png">Merge step 2,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge3.png">Merge step 3</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge4.png">Merge step 4,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge5.png">Merge step 5</a>. 
+	**Tortoisegit:** To merge from the master repo, there are several options. We show here the basic one: <a href="https://github.com/pletzer/collab_workflow/blob/master/merge1.png">merge step 1,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge2.png">step 2,</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge3.png">step 3</a> <a href="https://github.com/pletzer/collab_workflow/blob/master/merge4.png">step 4</a> and <a href="https://github.com/pletzer/collab_workflow/blob/master/merge5.png">step 5</a>. 
 		
 	And now, to do the equivalent of step (a) above, we need to pull from the remote branch to our local branch (<a href="https://github.com/pletzer/collab_workflow/blob/master/merge6.png">pull step 1</a> and <a href="https://github.com/pletzer/collab_workflow/blob/master/merge7.png">pull step 2</a>)
     				
@@ -133,9 +135,7 @@ git checkout master
  * Q: What if I need changes not yet accepted by a pull-request in order to work on a new feature? 
   * A: Branch off from the previous pull-request branch and make your changes theres. In the pull-request message, indicate that the current pull-request supercedes the previous pull-request. The collaborator then has the choice between aceepting the last pull-request and rejecting the previous one or accepting the previous one, or rejecting both.
 
- * Q: What is your favourite fish?
-  * A: massive sharks.
-
+ 
 ## Terminology
 
  * *project repo* - the original remote repository, expected to be stable and clean
