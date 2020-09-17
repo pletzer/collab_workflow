@@ -85,7 +85,7 @@ new_population_assessment   .-O--O---O-O-OO--O--+
 
 ## Five basic git commands
 
- 1. `git clone <url>` makes a direct copy of repository to you local machine
+ 1. `git clone <url>` makes a direct copy of repository to your local machine
  2. `git add <file>` adds a file for staging
  3. `git commit -a` commits all your changes locally (your repo copy on your machine)
  4. `git push` pushes changes from your local repo to remote (personal) repo
